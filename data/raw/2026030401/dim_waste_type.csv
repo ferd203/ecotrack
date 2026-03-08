@@ -1,0 +1,10 @@
+﻿waste_type_sk,waste_type_bk,waste_type_name
+1,RECY,Recyclable,
+2,OMR,Ordures ménagères résiduelles
+3,GLS,Verre
+4,PLS,Plastique
+5,BIO,Biodéchets
+6,MTL,Métal
+7,PCT,Papier & carton
+8,DDG,Déchets dangereux
+9,TXT,Textiles

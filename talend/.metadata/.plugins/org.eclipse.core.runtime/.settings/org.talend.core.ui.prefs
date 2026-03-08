@@ -1,0 +1,6 @@
+COLLECTOR_SYNC_NB=5
+DatabaseTableForm.defaultValueShowAgain=true
+data_collector=true
+data_collector_last_time=2026-03-04 01\:16\:04
+eclipse.preferences.version=1
+first.time.launch=false

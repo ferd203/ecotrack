@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_c40EoPJcEfCTlrqeeUj6oQ" name="PARAMS_LOG" id="_FBZjkPJcEfCTlrqeeUj6oQ" label="PARAMS_LOG" dataPackage="_c8o0sPJcEfCTlrqeeUj6oQ" ContextMode="true" ContextId="_cRjQUPJcEfCTlrqeeUj6oQ" contextName="Default" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://localhost:5432/ecotrack?" dbVersionString="V9_X" Port="context.PARAMS_LOG_Port" Username="context.PARAMS_LOG_Login" Password="context.PARAMS_LOG_Password" ServerName="context.PARAMS_LOG_Server" DatasourceName="" FileFieldName="" SID="context.PARAMS_LOG_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="context.PARAMS_LOG_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.PARAMS_LOG_Schema">
+    <taggedValue xmi:id="_c40EofJcEfCTlrqeeUj6oQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_c5LRAPJcEfCTlrqeeUj6oQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_c5YFUPJcEfCTlrqeeUj6oQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_c5YFUfJcEfCTlrqeeUj6oQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_c5YFUvJcEfCTlrqeeUj6oQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_c5YFU_JcEfCTlrqeeUj6oQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_c5YFVPJcEfCTlrqeeUj6oQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_c5YFVfJcEfCTlrqeeUj6oQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_c6W8wPJcEfCTlrqeeUj6oQ" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_c6W8wfJcEfCTlrqeeUj6oQ" tag="DB ProductVersion" value="17.5"/>
+    <taggedValue xmi:id="_c6W8wvJcEfCTlrqeeUj6oQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_c40EovJcEfCTlrqeeUj6oQ" key="CONN_PARA_KEY_USERNAME" value="context.PARAMS_LOG_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_c8o0sPJcEfCTlrqeeUj6oQ" name="ecotrack" dataManager="_c40EoPJcEfCTlrqeeUj6oQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_c8o0sfJcEfCTlrqeeUj6oQ" name="PARAMS_LOG">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_fEqRIPJcEfCTlrqeeUj6oQ" name="CONTEXTE" id="_fEnN0PJcEfCTlrqeeUj6oQ" label="CONTEXTE" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_fEqRIfJcEfCTlrqeeUj6oQ" name="key" label="key" length="100" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false">
+          <taggedValue xmi:id="_fEqRIvJcEfCTlrqeeUj6oQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_fEqRI_JcEfCTlrqeeUj6oQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_fEqRJPJcEfCTlrqeeUj6oQ" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_fEqRJfJcEfCTlrqeeUj6oQ" name="value" label="value" length="255" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_fEqRJvJcEfCTlrqeeUj6oQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_fEqRJ_JcEfCTlrqeeUj6oQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_fEqRKPJcEfCTlrqeeUj6oQ" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

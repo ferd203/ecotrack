@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_flED8PJmEfCTlrqeeUj6oQ" name="repository.metadataGenericSchema" dataPackage="_flED8fJmEfCTlrqeeUj6oQ"/>
+  <TalendMetadata:GenericPackage xmi:id="_flED8fJmEfCTlrqeeUj6oQ" name="repository.metadataGenericSchema" dataManager="_flED8PJmEfCTlrqeeUj6oQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_flED8vJmEfCTlrqeeUj6oQ" id="_TYzicPJmEfCTlrqeeUj6oQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_flED8_JmEfCTlrqeeUj6oQ" name="agent_sk" label="agent_sk" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_flED9PJmEfCTlrqeeUj6oQ" name="agent_bk" label="agent_bk" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_flED9fJmEfCTlrqeeUj6oQ" name="full_name" label="full_name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jA2OUPJmEfCTlrqeeUj6oQ" name="role" label="role" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kDsycPJmEfCTlrqeeUj6oQ" name="is_active" label="is_active" length="-1" talendType="id_Boolean"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

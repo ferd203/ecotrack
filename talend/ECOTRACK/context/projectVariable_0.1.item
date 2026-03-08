@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="__lIsAPJXEfCTlrqeeUj6oQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="__lIsAfJXEfCTlrqeeUj6oQ" comment="" name="projectFolder" prompt="projectFolder?" promptNeeded="false" type="id_Directory" value="D:\DATA_ECOTRACK\data\"/>
+  <contextParameter xmi:id="__lIsAvJXEfCTlrqeeUj6oQ" comment="" name="fieldSeparator" prompt="fieldSeparator?" promptNeeded="false" type="id_String" value=","/>
+  <contextParameter xmi:id="__lIsA_JXEfCTlrqeeUj6oQ" comment="" name="encodage" prompt="encodage?" promptNeeded="false" type="id_String" value="UTF-8"/>
+  <contextParameter xmi:id="_RTnk4PLlEfCTlrqeeUj6oQ" comment="" name="rejectFolder" prompt="rejectFolder?" promptNeeded="false" type="id_Directory" value="D:\DATA_ECOTRACK\reject\"/>
+  <contextParameter xmi:id="_RTnk4fLlEfCTlrqeeUj6oQ" comment="" name="archiveFolder" prompt="archiveFolder?" promptNeeded="false" type="id_Directory" value="D:\DATA_ECOTRACK\archive\"/>
+</talendfile:ContextType>

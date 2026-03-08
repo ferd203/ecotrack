@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_BNOq4BEHEfGRconVUJcsAg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_BNOq4REHEfGRconVUJcsAg" comment="" name="ecotrack_dw1_Login" prompt="ecotrack_dw1_Login?" promptNeeded="false" type="id_String" value="neondb_owner"/>
+  <contextParameter xmi:id="_BNOq4hEHEfGRconVUJcsAg" comment="" name="ecotrack_dw1_Database" prompt="ecotrack_dw1_Database?" promptNeeded="false" type="id_String" value="neondb"/>
+  <contextParameter xmi:id="_BNOq4xEHEfGRconVUJcsAg" comment="" name="ecotrack_dw1_Schema" prompt="ecotrack_dw1_Schema?" promptNeeded="false" type="id_String" value="dw"/>
+  <contextParameter xmi:id="_BNOq5BEHEfGRconVUJcsAg" comment="" name="ecotrack_dw1_Server" prompt="ecotrack_dw1_Server?" promptNeeded="false" type="id_String" value="ep-weathered-cherry-aies0456-pooler.c-4.us-east-1.aws.neon.tech"/>
+  <contextParameter xmi:id="_BNOq5REHEfGRconVUJcsAg" comment="" name="ecotrack_dw1_AdditionalParams" prompt="ecotrack_dw1_AdditionalParams?" promptNeeded="false" type="id_String" value="neondb?sslmode=require&amp;channel_binding=require"/>
+  <contextParameter xmi:id="_BNOq5hEHEfGRconVUJcsAg" comment="" name="ecotrack_dw1_Password" prompt="ecotrack_dw1_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:Pd4oOVsos6ItXSekQHJMj4MGD4JLX6w3tIBU8AAfO384JlVyGHzgL930bO4="/>
+  <contextParameter xmi:id="_BNOq5xEHEfGRconVUJcsAg" comment="" name="ecotrack_dw1_Port" prompt="ecotrack_dw1_Port?" promptNeeded="false" type="id_String" value="5432"/>
+</talendfile:ContextType>

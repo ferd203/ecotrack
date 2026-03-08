@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_9s3FAPioEfCy3KnSR5274A" comment="connectionComment" label="connectionLabel" dataPackage="_9s3FAfioEfCy3KnSR5274A"/>
+  <TalendMetadata:GenericPackage xmi:id="_9s3FAfioEfCy3KnSR5274A" dataManager="_9s3FAPioEfCy3KnSR5274A">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_9s3FAvioEfCy3KnSR5274A" id="_Lt7MAPipEfCy3KnSR5274A" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9s3FBfioEfCy3KnSR5274A" name="container_bk" id="5773" label="container_bk" length="50" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_9s3FBvioEfCy3KnSR5274A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9s3FB_ioEfCy3KnSR5274A" name="container_type" id="5774" label="container_type" length="50" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_9s3FCPioEfCy3KnSR5274A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9s3FCfioEfCy3KnSR5274A" name="capacity_l" id="5775" label="capacity_l" length="-1" sourceType="INT4" talendType="id_Double">
+        <initialValue xmi:id="_9s3FCvioEfCy3KnSR5274A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9s3FC_ioEfCy3KnSR5274A" name="zone_bk" id="5776" label="zone_bk" length="50" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_9s3FDPioEfCy3KnSR5274A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9s3FDfioEfCy3KnSR5274A" name="longitude" id="5777" label="longitude" length="9" precision="6" sourceType="NUMERIC" talendType="id_BigDecimal">
+        <initialValue xmi:id="_9s3FDvioEfCy3KnSR5274A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9s3FD_ioEfCy3KnSR5274A" name="latitude" id="5778" label="latitude" length="9" precision="6" sourceType="NUMERIC" talendType="id_BigDecimal">
+        <initialValue xmi:id="_9s3FEPioEfCy3KnSR5274A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9s3FEfioEfCy3KnSR5274A" name="location" id="5779" label="location" length="2147483647" sourceType="GEOMETRY" talendType="id_String">
+        <initialValue xmi:id="_9s3FEvioEfCy3KnSR5274A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9s3FE_ioEfCy3KnSR5274A" name="status" id="5780" label="status" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_9s3FFPioEfCy3KnSR5274A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9s3FFfioEfCy3KnSR5274A" name="date_debut" id="5781" label="date_debut" length="13" sourceType="DATE" talendType="id_Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_9s3FFvioEfCy3KnSR5274A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9s3FF_ioEfCy3KnSR5274A" name="date_fin" id="5782" label="date_fin" length="13" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_9s3FGPioEfCy3KnSR5274A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9s3FGfioEfCy3KnSR5274A" name="version" id="5783" label="version" length="10" sourceType="INT4" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_9s3FGvioEfCy3KnSR5274A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9s3FG_ioEfCy3KnSR5274A" name="is_current" id="5784" label="is_current" length="1" sourceType="BOOL" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_9s3FHPioEfCy3KnSR5274A"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,1912 @@
+!SESSION 2026-03-03 01:09:57.667 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_471
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file D:\File rouge\ECOTRACK\etl\.metadata\.bak_0.log
+Created Time: 2026-03-03 01:11:00.357
+
+!ENTRY org.eclipse.ui.workbench 4 2 2026-03-03 01:11:00.359
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException
+	at org.talend.designer.core.ui.editor.AbstractTalendEditor.dispose(AbstractTalendEditor.java:1388)
+	at org.eclipse.ui.part.MultiPageEditorPart$4.run(MultiPageEditorPart.java:1014)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.part.MultiPageEditorPart.disposePart(MultiPageEditorPart.java:1010)
+	at org.eclipse.ui.part.MultiPageEditorPart.dispose(MultiPageEditorPart.java:507)
+	at org.talend.designer.core.ui.AbstractMultiPageTalendEditor.dispose(AbstractMultiPageTalendEditor.java:1817)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:163)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:102)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:367)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:193)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:108)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:77)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1295)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:560)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:544)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.createElement(PartServiceImpl.java:1279)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1244)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:396)
+	at org.eclipse.ui.internal.ViewReference.getView(ViewReference.java:89)
+	at org.eclipse.ui.internal.WorkbenchPage.findView(WorkbenchPage.java:2012)
+	at org.talend.repository.viewer.RepoViewPartListener.partVisible(RepoViewPartListener.java:122)
+	at org.eclipse.ui.internal.PartService$12.run(PartService.java:218)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.PartService.partVisible(PartService.java:215)
+	at org.eclipse.ui.internal.WorkbenchPage$17.run(WorkbenchPage.java:5403)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.WorkbenchPage.firePartVisible(WorkbenchPage.java:5400)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$4(WorkbenchPage.java:5349)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl.setObject(PartImpl.java:438)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:133)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:560)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:544)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.createElement(PartServiceImpl.java:1283)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1244)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:396)
+	at org.eclipse.ui.internal.ViewReference.getView(ViewReference.java:89)
+	at org.eclipse.ui.internal.WorkbenchPage.findView(WorkbenchPage.java:2012)
+	at org.talend.core.model.utils.RepositoryManagerHelper.findRepositoryView(RepositoryManagerHelper.java:65)
+	at org.talend.core.model.utils.RepositoryManagerHelper.getDIRepositoryView(RepositoryManagerHelper.java:100)
+	at org.talend.core.model.utils.RepositoryManagerHelper.getRepositoryView(RepositoryManagerHelper.java:80)
+	at org.talend.core.model.repository.RepositoryManager.getRepositoryView(RepositoryManager.java:60)
+	at org.talend.rcp.intro.ApplicationWorkbenchWindowAdvisor$3.perspectiveActivated(ApplicationWorkbenchWindowAdvisor.java:463)
+	at org.eclipse.ui.internal.PerspectiveListenerList$1.run(PerspectiveListenerList.java:77)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.PerspectiveListenerList.fireEvent(PerspectiveListenerList.java:61)
+	at org.eclipse.ui.internal.PerspectiveListenerList.firePerspectiveActivated(PerspectiveListenerList.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.firePerspectiveActivated(WorkbenchWindow.java:1759)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$3(WorkbenchPage.java:3070)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:139)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:1)
+	at org.talend.core.ui.perspective.RestoreAllRegisteredPerspectivesProvider.activateTheProperPerspective(RestoreAllRegisteredPerspectivesProvider.java:222)
+	at org.talend.core.ui.perspective.RestoreAllRegisteredPerspectivesProvider.restoreAlwaysVisiblePerspectives(RestoreAllRegisteredPerspectivesProvider.java:179)
+	at org.talend.rcp.intro.ApplicationWorkbenchWindowAdvisor.postWindowOpen(ApplicationWorkbenchWindowAdvisor.java:403)
+	at org.eclipse.ui.internal.WorkbenchWindow.fireWindowOpened(WorkbenchWindow.java:1700)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1500)
+	at org.eclipse.ui.internal.Workbench.openWorkbenchWindow(Workbench.java:2534)
+	at org.eclipse.ui.internal.Workbench.getWorkbenchPage(Workbench.java:1990)
+	at org.eclipse.ui.internal.Workbench.setReference(Workbench.java:2038)
+	at org.eclipse.ui.internal.Workbench.lambda$11(Workbench.java:1928)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl.setContext(PartImpl.java:459)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:650)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:560)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:544)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1295)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1099)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.talend.rcp.intro.Application.start(Application.java:280)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:11:07.113
+!MESSAGE 2026-03-03 01:11:07,111 INFO  org.talend.librariesmanager.librarydata.LibraryDataService  - org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact com.teradata:tdgssconfig:pom:16.20.00.02 in talend (https://talend-update.talend.com/nexus/content/repositories/libraries/)
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:11:07.408
+!MESSAGE 2026-03-03 01:11:07,408 INFO  org.talend.librariesmanager.librarydata.LibraryDataService  - org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact com.teradata:terajdbc4:pom:16.20.00.02 in talend (https://talend-update.talend.com/nexus/content/repositories/libraries/)
+
+
+!ENTRY org.talend.platform.logging 2 0 2026-03-03 01:11:08.243
+!MESSAGE 2026-03-03 01:11:08,243 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 2 0 2026-03-03 01:11:08.268
+!MESSAGE 2026-03-03 01:11:08,268 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:11:17.305
+!MESSAGE 2026-03-03 01:11:17,303 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:11:17.828
+!MESSAGE 2026-03-03 01:11:17,826 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:11:17.830
+!MESSAGE 2026-03-03 01:11:17,828 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:11:17.834
+!MESSAGE 2026-03-03 01:11:17,834 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:11:17.836
+!MESSAGE 2026-03-03 01:11:17,836 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:12:19.804
+!MESSAGE 2026-03-03 01:12:19,804 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:12:20.036
+!MESSAGE 2026-03-03 01:12:20,034 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:12:20.528
+!MESSAGE 2026-03-03 01:12:20,528 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:12:20.530
+!MESSAGE 2026-03-03 01:12:20,530 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:12:20.540
+!MESSAGE 2026-03-03 01:12:20,540 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:12:20.542
+!MESSAGE 2026-03-03 01:12:20,542 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:12:20.807
+!MESSAGE 2026-03-03 01:12:20,807 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:12:21.583
+!MESSAGE 2026-03-03 01:12:21,581 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:12:22.536
+!MESSAGE 2026-03-03 01:12:22,536 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms2048M -Xmx4048M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/dim_container_0.1/target/classpath.jar; ecotrack.dim_container_0_1.dim_container --context=Default --stat_port=4061 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:13:09.041
+!MESSAGE 2026-03-03 01:13:09,040 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:13:09.497
+!MESSAGE 2026-03-03 01:13:09,497 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:13:10.382
+!MESSAGE 2026-03-03 01:13:10,379 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:13:10.384
+!MESSAGE 2026-03-03 01:13:10,382 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:13:10.391
+!MESSAGE 2026-03-03 01:13:10,389 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:13:10.393
+!MESSAGE 2026-03-03 01:13:10,391 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:13:10.621
+!MESSAGE 2026-03-03 01:13:10,621 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:13:11.215
+!MESSAGE 2026-03-03 01:13:11,215 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:13:11.516
+!MESSAGE 2026-03-03 01:13:11,516 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms2048M -Xmx4048M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/dim_container_0.1/target/classpath.jar; ecotrack.dim_container_0_1.dim_container --context=Default --stat_port=3992 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:14:08.808
+!MESSAGE 2026-03-03 01:14:08,808 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:14:08.992
+!MESSAGE 2026-03-03 01:14:08,992 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:14:09.620
+!MESSAGE 2026-03-03 01:14:09,618 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:14:09.622
+!MESSAGE 2026-03-03 01:14:09,620 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:14:09.630
+!MESSAGE 2026-03-03 01:14:09,628 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:14:09.632
+!MESSAGE 2026-03-03 01:14:09,632 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:14:09.926
+!MESSAGE 2026-03-03 01:14:09,924 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:14:10.425
+!MESSAGE 2026-03-03 01:14:10,423 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 01:14:10.635
+!MESSAGE 2026-03-03 01:14:10,633 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms2048M -Xmx4048M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/dim_container_0.1/target/classpath.jar; ecotrack.dim_container_0_1.dim_container --context=Default --stat_port=3753 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:33:15.365
+!MESSAGE 2026-03-03 22:33:15,359 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:33:18.515
+!MESSAGE 2026-03-03 22:33:18,513 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:33:21.892
+!MESSAGE 2026-03-03 22:33:21,891 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:33:21.894
+!MESSAGE 2026-03-03 22:33:21,893 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:33:21.908
+!MESSAGE 2026-03-03 22:33:21,907 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:33:21.909
+!MESSAGE 2026-03-03 22:33:21,908 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:33:22.180
+!MESSAGE 2026-03-03 22:33:22,178 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 6 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:33:23.685
+!MESSAGE 2026-03-03 22:33:23,683 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:33:24.105
+!MESSAGE 2026-03-03 22:33:24,104 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms2048M -Xmx4048M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/dim_container_0.1/target/classpath.jar; ecotrack.dim_container_0_1.dim_container --context=Default --stat_port=3890 %*
+
+
+!ENTRY org.talend.platform.logging 4 0 2026-03-03 22:34:49.886
+!MESSAGE 2026-03-03 22:34:49,884 ERROR org.talend.commons.exception.CommonExceptionHandler  - Stream closed
+
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getInIfOpen(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at us.monoid.web.AbstractResource.fill(AbstractResource.java:44)
+	at us.monoid.web.Resty.fillResourceFromURL(Resty.java:432)
+	at us.monoid.web.Resty.doPOSTOrPUT(Resty.java:394)
+	at us.monoid.web.Resty.text(Resty.java:258)
+	at us.monoid.web.Resty.text(Resty.java:284)
+	at org.talend.core.ui.token.TokenCollectorFactory$1.run(TokenCollectorFactory.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.talend.platform.logging 4 0 2026-03-03 22:34:53.240
+!MESSAGE 2026-03-03 22:34:53,239 ERROR org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob  - Preference node "org.eclipse.m2e.core" has been removed.
+
+!STACK 0
+java.lang.IllegalStateException: Preference node "org.eclipse.m2e.core" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:606)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.convertFromProperties(EclipsePreferences.java:255)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:515)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:498)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.resources.ProjectScope.getNode(ProjectScope.java:72)
+	at org.eclipse.m2e.core.internal.project.ResolverConfigurationIO.readResolverConfiguration(ResolverConfigurationIO.java:111)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readMavenProjectFacade(ProjectRegistryManager.java:692)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:473)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:349)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1$1.call(ProjectRegistryRefreshJob.java:89)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1$1.call(ProjectRegistryRefreshJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1332)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:87)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-03-03 22:35:11.537
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2026-03-03 22:39:44.883 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_471
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2026-03-03 22:39:53.557
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [20]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2026-03-03 22:39:53.561
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [21]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:41:19.019
+!MESSAGE 2026-03-03 22:41:19,013 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: D:\LOGICIELS\Logiciels\TOS_DI-20200219_1130-V7.3.1\TOS_DI-20200219_1130-V7.3.1\configuration\studio.keys
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-03-03 22:41:20.556
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:41:37.845
+!MESSAGE 2026-03-03 22:41:37,844 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 2 0 2026-03-03 22:42:38.510
+!MESSAGE 2026-03-03 22:42:38,509 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:43:07.880
+!MESSAGE 2026-03-03 22:43:07,880 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:43:07.882
+!MESSAGE 2026-03-03 22:43:07,881 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /ECOTRACK_ROUTINES/src/main/java overlaps with sources folder /ECOTRACK_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:43:07.913
+!MESSAGE 2026-03-03 22:43:07,912 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:43:07.913
+!MESSAGE 2026-03-03 22:43:07,913 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:43:18.353
+!MESSAGE 2026-03-03 22:43:18,352 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\File rouge\ECOTRACK\etl\ECOTRACK\poms\code\routines
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:43:18.356
+!MESSAGE 2026-03-03 22:43:18,355 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s D:\LOGICIELS\Logiciels\TOS_DI-20200219_1130-V7.3.1\TOS_DI-20200219_1130-V7.3.1\configuration\maven_user_settings.xml install -llr -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:43:26.620
+!MESSAGE 2026-03-03 22:43:26,619 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com connecté à ecotrack
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:43:29.046
+!MESSAGE 2026-03-03 22:43:29,046 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:43:48.365
+!MESSAGE 2026-03-03 22:43:48,365 INFO  org.talend.librariesmanager.librarydata.LibraryDataService  - org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact com.teradata:tdgssconfig:pom:16.20.00.02 in talend (https://talend-update.talend.com/nexus/content/repositories/libraries/)
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:43:48.695
+!MESSAGE 2026-03-03 22:43:48,695 INFO  org.talend.librariesmanager.librarydata.LibraryDataService  - org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact com.teradata:terajdbc4:pom:16.20.00.02 in talend (https://talend-update.talend.com/nexus/content/repositories/libraries/)
+
+
+!ENTRY org.talend.platform.logging 2 0 2026-03-03 22:43:50.022
+!MESSAGE 2026-03-03 22:43:50,021 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 2 0 2026-03-03 22:43:50.048
+!MESSAGE 2026-03-03 22:43:50,047 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:45:20.454
+!MESSAGE 2026-03-03 22:45:20,452 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:45:21.262
+!MESSAGE 2026-03-03 22:45:21,261 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:45:21.263
+!MESSAGE 2026-03-03 22:45:21,263 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:45:21.268
+!MESSAGE 2026-03-03 22:45:21,267 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:45:21.269
+!MESSAGE 2026-03-03 22:45:21,269 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/resources
+
+
+!ENTRY org.eclipse.ui 4 4 2026-03-03 22:47:29.322
+!MESSAGE To avoid deadlock while executing Display.syncExec() with argument: org.talend.core.ui.component.ComponentPaletteUtilities$1@653e3982, thread Worker-1: Mettre à jour la palette pour les éditeurs will interrupt UI thread.
+!SUBENTRY 1 org.eclipse.ui 4 4 2026-03-03 22:47:29.322
+!MESSAGE Worker-1: Mettre à jour la palette pour les éditeurs thread is an instance of Worker or owns an ILock
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread Worker-1: Mettre à jour la palette pour les éditeurs
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.getThreadInfo(Unknown Source)
+	at org.eclipse.ui.internal.UILockListener.reportInterruption(UILockListener.java:209)
+	at org.eclipse.ui.internal.UILockListener.interruptUI(UILockListener.java:179)
+	at org.eclipse.ui.internal.PendingSyncExec.waitUntilExecuted(PendingSyncExec.java:85)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:156)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+	at org.talend.core.ui.component.ComponentPaletteUtilities.updatePalette(ComponentPaletteUtilities.java:116)
+	at org.talend.designer.core.DesignerCoreService.synchronizeDesignerUI(DesignerCoreService.java:287)
+	at org.talend.designer.codegen.model.CodeGeneratorEmittersPoolFactory$JobRunnable$1.run(CodeGeneratorEmittersPoolFactory.java:236)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.ui 4 4 2026-03-03 22:47:29.322
+!MESSAGE UI thread waiting on a job or lock.
+!STACK 0
+java.lang.IllegalStateException: Call stack for thread main
+	at java.lang.Object.hashCode(Native Method)
+	at java.util.HashMap.hash(Unknown Source)
+	at java.util.HashMap.put(Unknown Source)
+	at org.eclipse.gef.editparts.AbstractEditPart.registerModel(AbstractEditPart.java:839)
+	at org.eclipse.gef.editparts.AbstractEditPart.register(AbstractEditPart.java:817)
+	at org.eclipse.gef.internal.ui.palette.editparts.DrawerEditPart.register(DrawerEditPart.java:212)
+	at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java:248)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java:223)
+	at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java:212)
+	at org.talend.designer.core.ui.editor.palette.TalendDrawerEditPart.addChild(TalendDrawerEditPart.java:155)
+	at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java:781)
+	at org.eclipse.gef.ui.palette.editparts.PaletteEditPart.propertyChange(PaletteEditPart.java:341)
+	at org.talend.designer.core.ui.editor.palette.TalendDrawerEditPart.propertyChange(TalendDrawerEditPart.java:108)
+	at java.beans.PropertyChangeSupport.fire(Unknown Source)
+	at java.beans.PropertyChangeSupport.firePropertyChange(Unknown Source)
+	at java.beans.PropertyChangeSupport.firePropertyChange(Unknown Source)
+	at org.eclipse.gef.palette.PaletteContainer.add(PaletteContainer.java:96)
+	at org.eclipse.gef.palette.PaletteContainer.add(PaletteContainer.java:74)
+	at org.talend.designer.core.ui.editor.TalendEditorPaletteFactory.createComponentDrawer(TalendEditorPaletteFactory.java:1247)
+	at org.talend.designer.core.ui.editor.TalendEditorPaletteFactory.createComponentsDrawer(TalendEditorPaletteFactory.java:238)
+	at org.talend.designer.core.ui.editor.TalendEditorPaletteFactory.access$0(TalendEditorPaletteFactory.java:172)
+	at org.talend.designer.core.ui.editor.TalendEditorPaletteFactory$2.run(TalendEditorPaletteFactory.java:166)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+	at org.talend.designer.core.ui.editor.TalendEditorPaletteFactory.createComponentsDrawer(TalendEditorPaletteFactory.java:162)
+	at org.talend.designer.core.ui.editor.TalendEditorPaletteFactory.createPalette(TalendEditorPaletteFactory.java:1313)
+	at org.talend.designer.core.DesignerCoreUIService.createPalette(DesignerCoreUIService.java:54)
+	at org.talend.core.ui.component.ComponentPaletteUtilities$1.run(ComponentPaletteUtilities.java:134)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:61)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:171)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:139)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:117)
+	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:203)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:95)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:297)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:124)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2243)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2290)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.talend.designer.maven.utils.PomUtil.updateFilesInWorkspaceRunnable(PomUtil.java:1072)
+	at org.talend.designer.maven.utils.PomUtil.backupPomFile(PomUtil.java:980)
+	at org.talend.designer.maven.utils.PomUtil.backupPomFile(PomUtil.java:969)
+	at org.talend.designer.runprocess.maven.MavenJavaProcessor.generateCodeAfter(MavenJavaProcessor.java:103)
+	at org.talend.designer.runprocess.maven.MavenJavaProcessor.generateCode(MavenJavaProcessor.java:95)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateContextInfo(ProcessorUtilities.java:1019)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:605)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:2068)
+	at org.talend.designer.runprocess.RunProcessContext$1.run(RunProcessContext.java:601)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:440)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:356)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:474)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:240)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:966)
+	at org.talend.designer.runprocess.RunProcessContext.exec(RunProcessContext.java:548)
+	at org.talend.designer.runprocess.ui.ProcessComposite.exec(ProcessComposite.java:1448)
+	at org.talend.designer.runprocess.ui.views.ProcessView$RunAction.run(ProcessView.java:700)
+	at org.talend.designer.runprocess.ui.actions.RunProcessAction.run(RunProcessAction.java:63)
+	at org.talend.designer.core.debug.JobLaunchConfigurationDelegate$1$1.run(JobLaunchConfigurationDelegate.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.ui.internal.Workbench$$Lambda$794/0x0000000101452028.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.talend.rcp.intro.Application.start(Application.java:280)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:47:30.141
+!MESSAGE 2026-03-03 22:47:30,140 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:47:30.661
+!MESSAGE 2026-03-03 22:47:30,660 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:47:31.757
+!MESSAGE 2026-03-03 22:47:31,756 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:47:31.759
+!MESSAGE 2026-03-03 22:47:31,758 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:47:31.822
+!MESSAGE 2026-03-03 22:47:31,821 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:47:31.823
+!MESSAGE 2026-03-03 22:47:31,822 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_DIM_CONTAINER_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:47:32.397
+!MESSAGE 2026-03-03 22:47:32,396 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 2 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:47:33.091
+!MESSAGE 2026-03-03 22:47:33,089 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-03 22:47:34.317
+!MESSAGE 2026-03-03 22:47:34,316 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms2048M -Xmx4048M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/dim_container_0.1/target/classpath.jar; ecotrack.dim_container_0_1.dim_container --context=Default --stat_port=4004 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:15:59.108
+!MESSAGE 2026-03-04 00:15:59,108 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:15:59.112
+!MESSAGE 2026-03-04 00:15:59,110 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_DIM_CONTAINER_0.1: org.example.ecotrack.job:dim_container:0.1.0 with classifier  to /ECOTRACK_DIM_CONTAINER_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:15:59.541
+!MESSAGE 2026-03-04 00:15:59,539 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_ORCHESTRATION_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:15:59.543
+!MESSAGE 2026-03-04 00:15:59,541 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_ORCHESTRATION_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:15:59.547
+!MESSAGE 2026-03-04 00:15:59,545 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_ORCHESTRATION_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:15:59.549
+!MESSAGE 2026-03-04 00:15:59,547 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_ORCHESTRATION_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:16:21.795
+!MESSAGE 2026-03-04 00:16:21,793 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:16:21.963
+!MESSAGE 2026-03-04 00:16:21,961 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:16:21.965
+!MESSAGE 2026-03-04 00:16:21,965 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_DIM_CONTAINER_0.1: org.example.ecotrack.job:dim_container:0.1.0 with classifier  to /ECOTRACK_DIM_CONTAINER_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:16:21.967
+!MESSAGE 2026-03-04 00:16:21,965 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_JFACT_MESUREMENT_0.1: org.example.ecotrack.job:jfact_mesurement:0.1.0 with classifier  to /ECOTRACK_JFACT_MESUREMENT_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:16:22.971
+!MESSAGE 2026-03-04 00:16:22,968 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:16:22.971
+!MESSAGE 2026-03-04 00:16:22,971 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:16:22.975
+!MESSAGE 2026-03-04 00:16:22,975 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:16:22.977
+!MESSAGE 2026-03-04 00:16:22,975 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:06.688
+!MESSAGE 2026-03-04 00:17:06,686 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:06.847
+!MESSAGE 2026-03-04 00:17:06,845 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:06.849
+!MESSAGE 2026-03-04 00:17:06,847 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_JDIM_ROUTE_0.1: org.example.ecotrack.job:jdim_route:0.1.0 with classifier  to /ECOTRACK_JDIM_ROUTE_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:06.853
+!MESSAGE 2026-03-04 00:17:06,851 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_DIM_CONTAINER_0.1: org.example.ecotrack.job:dim_container:0.1.0 with classifier  to /ECOTRACK_DIM_CONTAINER_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:06.855
+!MESSAGE 2026-03-04 00:17:06,853 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_JFACT_MESUREMENT_0.1: org.example.ecotrack.job:jfact_mesurement:0.1.0 with classifier  to /ECOTRACK_JFACT_MESUREMENT_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:07.445
+!MESSAGE 2026-03-04 00:17:07,445 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:07.447
+!MESSAGE 2026-03-04 00:17:07,445 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:07.449
+!MESSAGE 2026-03-04 00:17:07,449 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:07.451
+!MESSAGE 2026-03-04 00:17:07,451 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:16.684
+!MESSAGE 2026-03-04 00:17:16,684 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:16.922
+!MESSAGE 2026-03-04 00:17:16,920 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:17.511
+!MESSAGE 2026-03-04 00:17:17,511 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:17.513
+!MESSAGE 2026-03-04 00:17:17,513 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:17.519
+!MESSAGE 2026-03-04 00:17:17,517 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:17.521
+!MESSAGE 2026-03-04 00:17:17,519 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:17.947
+!MESSAGE 2026-03-04 00:17:17,945 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:18.405
+!MESSAGE 2026-03-04 00:17:18,403 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:17:18.921
+!MESSAGE 2026-03-04 00:17:18,919 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/jdim_route_0.1/target/classpath.jar; ecotrack.jdim_route_0_1.jdim_route --context=Default --stat_port=3501 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:19:53.261
+!MESSAGE 2026-03-04 00:19:53,261 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:19:53.491
+!MESSAGE 2026-03-04 00:19:53,491 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:19:54.275
+!MESSAGE 2026-03-04 00:19:54,273 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:19:54.278
+!MESSAGE 2026-03-04 00:19:54,275 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:19:54.286
+!MESSAGE 2026-03-04 00:19:54,285 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:19:54.287
+!MESSAGE 2026-03-04 00:19:54,287 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:19:54.563
+!MESSAGE 2026-03-04 00:19:54,563 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:19:54.979
+!MESSAGE 2026-03-04 00:19:54,979 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:19:55.145
+!MESSAGE 2026-03-04 00:19:55,145 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/jdim_route_0.1/target/classpath.jar; ecotrack.jdim_route_0_1.jdim_route --context=Default --stat_port=3464 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:23:34.519
+!MESSAGE 2026-03-04 00:23:34,517 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:23:34.715
+!MESSAGE 2026-03-04 00:23:34,715 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:23:35.569
+!MESSAGE 2026-03-04 00:23:35,567 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:23:35.569
+!MESSAGE 2026-03-04 00:23:35,569 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:23:35.573
+!MESSAGE 2026-03-04 00:23:35,573 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:23:35.575
+!MESSAGE 2026-03-04 00:23:35,573 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:23:35.745
+!MESSAGE 2026-03-04 00:23:35,745 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:23:36.139
+!MESSAGE 2026-03-04 00:23:36,138 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:23:36.320
+!MESSAGE 2026-03-04 00:23:36,320 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/jdim_route_0.1/target/classpath.jar; ecotrack.jdim_route_0_1.jdim_route --context=Default --stat_port=3978 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:24:13.045
+!MESSAGE 2026-03-04 00:24:13,045 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:24:15.102
+!MESSAGE 2026-03-04 00:24:15,100 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /.Java/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:24:15.102
+!MESSAGE 2026-03-04 00:24:15,102 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /.Java/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:24:15.104
+!MESSAGE 2026-03-04 00:24:15,104 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /.Java/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:24:15.106
+!MESSAGE 2026-03-04 00:24:15,106 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /.Java/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:24:16.927
+!MESSAGE 2026-03-04 00:24:16,925 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:24:17.590
+!MESSAGE 2026-03-04 00:24:17,590 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:24:17.646
+!MESSAGE 2026-03-04 00:24:17,644 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/.Java/target/classpath.jar; ecotrack.mock_job_for_guess_schema_0_1.Mock_job_for_Guess_schema --context=Default %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:24:53.940
+!MESSAGE 2026-03-04 00:24:53,940 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:24:54.166
+!MESSAGE 2026-03-04 00:24:54,164 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/.Java/target/classpath.jar; ecotrack.mock_job_for_guess_schema_0_1.Mock_job_for_Guess_schema --context=Default %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:25:17.004
+!MESSAGE 2026-03-04 00:25:17,002 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:25:17.211
+!MESSAGE 2026-03-04 00:25:17,211 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:25:17.869
+!MESSAGE 2026-03-04 00:25:17,867 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:25:17.871
+!MESSAGE 2026-03-04 00:25:17,869 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:25:17.881
+!MESSAGE 2026-03-04 00:25:17,879 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:25:17.883
+!MESSAGE 2026-03-04 00:25:17,881 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:25:18.169
+!MESSAGE 2026-03-04 00:25:18,169 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:25:18.572
+!MESSAGE 2026-03-04 00:25:18,570 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:25:18.742
+!MESSAGE 2026-03-04 00:25:18,740 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/jdim_route_0.1/target/classpath.jar; ecotrack.jdim_route_0_1.jdim_route --context=Default --stat_port=3588 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:27:38.772
+!MESSAGE 2026-03-04 00:27:38,772 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:27:38.905
+!MESSAGE 2026-03-04 00:27:38,903 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 4 0 2026-03-04 00:27:39.528
+!MESSAGE 2026-03-04 00:27:39,524 ERROR org.talend.commons.exception.CommonExceptionHandler  - org.eclipse.core.runtime.OperationCanceledException: Operation cancelled
+
+!STACK 0
+org.talend.designer.runprocess.ProcessorException: org.eclipse.core.runtime.OperationCanceledException: Operation cancelled
+	at org.talend.designer.runprocess.ProcessorUtilities.generateBuildInfo(ProcessorUtilities.java:947)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:615)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:2068)
+	at org.talend.designer.runprocess.RunProcessContext$1.run(RunProcessContext.java:601)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:440)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:356)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:474)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:240)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:966)
+	at org.talend.designer.runprocess.RunProcessContext.exec(RunProcessContext.java:548)
+	at org.talend.designer.runprocess.ui.ProcessComposite.exec(ProcessComposite.java:1448)
+	at org.talend.designer.runprocess.ui.views.ProcessView$RunAction.run(ProcessView.java:700)
+	at org.talend.designer.runprocess.ui.actions.RunProcessAction.run(RunProcessAction.java:63)
+	at org.talend.designer.core.debug.JobLaunchConfigurationDelegate$1$1.run(JobLaunchConfigurationDelegate.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.talend.rcp.intro.Application.start(Application.java:280)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+Caused by: org.eclipse.core.runtime.OperationCanceledException: Operation cancelled
+	at org.eclipse.jdt.internal.core.JavaModelOperation.checkCanceled(JavaModelOperation.java:233)
+	at org.eclipse.jdt.internal.core.SetContainerOperation.executeOperation(SetContainerOperation.java:44)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:807)
+	at org.eclipse.jdt.core.JavaCore.setClasspathContainer(JavaCore.java:5880)
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.updateClasspath(BuildPathManager.java:207)
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.mavenProjectChanged(BuildPathManager.java:194)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:777)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:921)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:405)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:352)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1332)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:349)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:335)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:317)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:306)
+	at org.talend.designer.maven.utils.MavenProjectUtils.updateMavenProject(MavenProjectUtils.java:96)
+	at org.talend.designer.runprocess.maven.MavenJavaProcessor.build(MavenJavaProcessor.java:428)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateBuildInfo(ProcessorUtilities.java:944)
+	... 38 more
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:16.489
+!MESSAGE 2026-03-04 00:28:16,487 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:16.669
+!MESSAGE 2026-03-04 00:28:16,669 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:17.398
+!MESSAGE 2026-03-04 00:28:17,396 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:17.398
+!MESSAGE 2026-03-04 00:28:17,398 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:17.406
+!MESSAGE 2026-03-04 00:28:17,404 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:17.406
+!MESSAGE 2026-03-04 00:28:17,406 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:17.672
+!MESSAGE 2026-03-04 00:28:17,670 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:18.100
+!MESSAGE 2026-03-04 00:28:18,100 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 4 0 2026-03-04 00:28:18.149
+!MESSAGE 2026-03-04 00:28:18,147 ERROR org.talend.commons.exception.CommonExceptionHandler  - Erreurs de compilation du Job 
+Au moins le Job "jdim_route" a des erreurs de compilation, réparez et réexportez.
+Ligne en erreur: 4994
+Message détaillé: The method setInt(int, int) in the type PreparedStatement is not applicable for the arguments (int, Double)
+Il peut y avoir d'autres erreurs causées par la compatibilité avec la JVM. Vérifiez que les paramètres de votre JVM sont les mêmes que dans le studio.
+
+!STACK 0
+org.talend.designer.runprocess.ProcessorException: Erreurs de compilation du Job 
+Au moins le Job "jdim_route" a des erreurs de compilation, réparez et réexportez.
+Ligne en erreur: 4994
+Message détaillé: The method setInt(int, int) in the type PreparedStatement is not applicable for the arguments (int, Double)
+Il peut y avoir d'autres erreurs causées par la compatibilité avec la JVM. Vérifiez que les paramètres de votre JVM sont les mêmes que dans le studio.
+	at org.talend.designer.runprocess.JobErrorsChecker.checkLastGenerationHasCompilationError(JobErrorsChecker.java:358)
+	at org.talend.designer.runprocess.DefaultRunProcessService.checkLastGenerationHasCompilationError(DefaultRunProcessService.java:539)
+	at org.talend.designer.runprocess.RunProcessService.checkLastGenerationHasCompilationError(RunProcessService.java:317)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateBuildInfo(ProcessorUtilities.java:955)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:615)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:2068)
+	at org.talend.designer.runprocess.RunProcessContext$1.run(RunProcessContext.java:601)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:440)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:356)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:474)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:240)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:966)
+	at org.talend.designer.runprocess.RunProcessContext.exec(RunProcessContext.java:548)
+	at org.talend.designer.runprocess.ui.ProcessComposite.exec(ProcessComposite.java:1448)
+	at org.talend.designer.runprocess.ui.views.ProcessView$RunAction.run(ProcessView.java:700)
+	at org.talend.designer.runprocess.ui.actions.RunProcessAction.run(RunProcessAction.java:63)
+	at org.talend.designer.core.debug.JobLaunchConfigurationDelegate$1$1.run(JobLaunchConfigurationDelegate.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.talend.rcp.intro.Application.start(Application.java:280)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:51.190
+!MESSAGE 2026-03-04 00:28:51,188 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:51.390
+!MESSAGE 2026-03-04 00:28:51,390 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:52.379
+!MESSAGE 2026-03-04 00:28:52,379 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:52.381
+!MESSAGE 2026-03-04 00:28:52,381 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:52.386
+!MESSAGE 2026-03-04 00:28:52,384 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:52.389
+!MESSAGE 2026-03-04 00:28:52,386 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:52.536
+!MESSAGE 2026-03-04 00:28:52,536 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:28:52.874
+!MESSAGE 2026-03-04 00:28:52,872 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 4 0 2026-03-04 00:28:52.923
+!MESSAGE 2026-03-04 00:28:52,922 ERROR org.talend.commons.exception.CommonExceptionHandler  - Erreurs de compilation du Job 
+Au moins le Job "jdim_route" a des erreurs de compilation, réparez et réexportez.
+Ligne en erreur: 4994
+Message détaillé: The method setInt(int, int) in the type PreparedStatement is not applicable for the arguments (int, Double)
+Il peut y avoir d'autres erreurs causées par la compatibilité avec la JVM. Vérifiez que les paramètres de votre JVM sont les mêmes que dans le studio.
+
+!STACK 0
+org.talend.designer.runprocess.ProcessorException: Erreurs de compilation du Job 
+Au moins le Job "jdim_route" a des erreurs de compilation, réparez et réexportez.
+Ligne en erreur: 4994
+Message détaillé: The method setInt(int, int) in the type PreparedStatement is not applicable for the arguments (int, Double)
+Il peut y avoir d'autres erreurs causées par la compatibilité avec la JVM. Vérifiez que les paramètres de votre JVM sont les mêmes que dans le studio.
+	at org.talend.designer.runprocess.JobErrorsChecker.checkLastGenerationHasCompilationError(JobErrorsChecker.java:358)
+	at org.talend.designer.runprocess.DefaultRunProcessService.checkLastGenerationHasCompilationError(DefaultRunProcessService.java:539)
+	at org.talend.designer.runprocess.RunProcessService.checkLastGenerationHasCompilationError(RunProcessService.java:317)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateBuildInfo(ProcessorUtilities.java:955)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:615)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:2068)
+	at org.talend.designer.runprocess.RunProcessContext$1.run(RunProcessContext.java:601)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:440)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:356)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:474)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:240)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:966)
+	at org.talend.designer.runprocess.RunProcessContext.exec(RunProcessContext.java:548)
+	at org.talend.designer.runprocess.ui.ProcessComposite.exec(ProcessComposite.java:1448)
+	at org.talend.designer.runprocess.ui.views.ProcessView$RunAction.run(ProcessView.java:700)
+	at org.talend.designer.runprocess.ui.actions.RunProcessAction.run(RunProcessAction.java:63)
+	at org.talend.designer.core.debug.JobLaunchConfigurationDelegate$1$1.run(JobLaunchConfigurationDelegate.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.talend.rcp.intro.Application.start(Application.java:280)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:29:20.803
+!MESSAGE 2026-03-04 00:29:20,803 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:29:21.011
+!MESSAGE 2026-03-04 00:29:21,011 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:29:21.757
+!MESSAGE 2026-03-04 00:29:21,755 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:29:21.759
+!MESSAGE 2026-03-04 00:29:21,757 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:29:21.830
+!MESSAGE 2026-03-04 00:29:21,828 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:29:21.830
+!MESSAGE 2026-03-04 00:29:21,830 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:29:21.996
+!MESSAGE 2026-03-04 00:29:21,995 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:29:22.497
+!MESSAGE 2026-03-04 00:29:22,495 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:29:22.668
+!MESSAGE 2026-03-04 00:29:22,666 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/jdim_route_0.1/target/classpath.jar; ecotrack.jdim_route_0_1.jdim_route --context=Default --stat_port=3982 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:31:03.648
+!MESSAGE 2026-03-04 00:31:03,646 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:31:03.839
+!MESSAGE 2026-03-04 00:31:03,837 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:31:04.511
+!MESSAGE 2026-03-04 00:31:04,511 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:31:04.513
+!MESSAGE 2026-03-04 00:31:04,511 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:31:04.580
+!MESSAGE 2026-03-04 00:31:04,578 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:31:04.580
+!MESSAGE 2026-03-04 00:31:04,580 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:31:04.727
+!MESSAGE 2026-03-04 00:31:04,725 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:31:05.060
+!MESSAGE 2026-03-04 00:31:05,060 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 00:31:05.271
+!MESSAGE 2026-03-04 00:31:05,269 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/jdim_route_0.1/target/classpath.jar; ecotrack.jdim_route_0_1.jdim_route --context=Default --stat_port=3638 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:07:11.049
+!MESSAGE 2026-03-04 01:07:11,047 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:07:11.420
+!MESSAGE 2026-03-04 01:07:11,420 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:07:12.227
+!MESSAGE 2026-03-04 01:07:12,227 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:07:12.229
+!MESSAGE 2026-03-04 01:07:12,229 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:07:12.237
+!MESSAGE 2026-03-04 01:07:12,237 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:07:12.239
+!MESSAGE 2026-03-04 01:07:12,239 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:07:12.831
+!MESSAGE 2026-03-04 01:07:12,829 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:07:13.529
+!MESSAGE 2026-03-04 01:07:13,529 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:07:13.997
+!MESSAGE 2026-03-04 01:07:13,997 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx4096M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -XX:ConcGCThreads=2 -XX:ParallelGCThreads=4 -XX:MaxGCPauseMillis=200 -XX:+UseG1GC -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/jfact_mesurement_0.1/target/classpath.jar; ecotrack.jfact_mesurement_0_1.jfact_mesurement --context=Default --stat_port=3778 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:13:24.105
+!MESSAGE 2026-03-04 01:13:24,105 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:13:24.232
+!MESSAGE 2026-03-04 01:13:24,230 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:13:25.055
+!MESSAGE 2026-03-04 01:13:25,053 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:13:25.055
+!MESSAGE 2026-03-04 01:13:25,055 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:13:25.059
+!MESSAGE 2026-03-04 01:13:25,059 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:13:25.061
+!MESSAGE 2026-03-04 01:13:25,059 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:13:25.180
+!MESSAGE 2026-03-04 01:13:25,180 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:13:25.513
+!MESSAGE 2026-03-04 01:13:25,513 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:13:25.705
+!MESSAGE 2026-03-04 01:13:25,705 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx4096M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -XX:ConcGCThreads=2 -XX:ParallelGCThreads=4 -XX:MaxGCPauseMillis=200 -XX:+UseG1GC -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/jdim_route_0.1/target/classpath.jar; ecotrack.jdim_route_0_1.jdim_route --context=Default --stat_port=3718 %*
+
+
+!ENTRY org.talend.platform.logging 4 0 2026-03-04 01:22:20.560
+!MESSAGE 2026-03-04 01:22:20,559 ERROR org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener  - Could not update launch configuration
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.getLaunchConfiguration(MavenRuntimeClasspathProvider.java:385)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:376)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:777)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:921)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.talend.platform.logging 4 0 2026-03-04 01:22:20.562
+!MESSAGE 2026-03-04 01:22:20,562 ERROR org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener  - Could not update launch configuration
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.getLaunchConfiguration(MavenRuntimeClasspathProvider.java:385)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:376)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:777)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:921)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.talend.platform.logging 4 0 2026-03-04 01:22:20.564
+!MESSAGE 2026-03-04 01:22:20,562 ERROR org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener  - Could not update launch configuration
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.getLaunchConfiguration(MavenRuntimeClasspathProvider.java:385)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:376)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:777)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:921)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.talend.platform.logging 4 0 2026-03-04 01:22:20.564
+!MESSAGE 2026-03-04 01:22:20,564 ERROR org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener  - Could not update launch configuration
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.getLaunchConfiguration(MavenRuntimeClasspathProvider.java:385)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:376)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:777)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:921)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.talend.platform.logging 4 0 2026-03-04 01:22:20.566
+!MESSAGE 2026-03-04 01:22:20,564 ERROR org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener  - Could not update launch configuration
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.getLaunchConfiguration(MavenRuntimeClasspathProvider.java:385)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:376)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:777)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:921)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.talend.platform.logging 4 0 2026-03-04 01:22:20.566
+!MESSAGE 2026-03-04 01:22:20,566 ERROR org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener  - Could not update launch configuration
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.getLaunchConfiguration(MavenRuntimeClasspathProvider.java:385)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:376)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:777)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:921)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-03-04 01:22:20.580
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2026-03-04 01:22:58.213 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_471
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2026-03-04 01:23:00.262
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [20]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2026-03-04 01:23:00.264
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [21]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:23:04.312
+!MESSAGE 2026-03-04 01:23:04,302 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: D:\LOGICIELS\Logiciels\TOS_DI-20200219_1130-V7.3.1\TOS_DI-20200219_1130-V7.3.1\configuration\studio.keys
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-03-04 01:23:04.733
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:23:10.055
+!MESSAGE 2026-03-04 01:23:10,055 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 2 0 2026-03-04 01:23:24.298
+!MESSAGE 2026-03-04 01:23:24,296 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:23:32.508
+!MESSAGE 2026-03-04 01:23:32,506 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:23:32.510
+!MESSAGE 2026-03-04 01:23:32,508 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /ECOTRACK_ROUTINES/src/main/java overlaps with sources folder /ECOTRACK_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:23:32.525
+!MESSAGE 2026-03-04 01:23:32,523 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:23:32.525
+!MESSAGE 2026-03-04 01:23:32,525 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:23:38.736
+!MESSAGE 2026-03-04 01:23:38,736 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\File rouge\ECOTRACK\etl\ECOTRACK\poms\code\routines
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:23:38.740
+!MESSAGE 2026-03-04 01:23:38,740 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s D:\LOGICIELS\Logiciels\TOS_DI-20200219_1130-V7.3.1\TOS_DI-20200219_1130-V7.3.1\configuration\maven_user_settings.xml install -llr -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:23:44.865
+!MESSAGE 2026-03-04 01:23:44,865 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com connecté à ecotrack
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:23:46.557
+!MESSAGE 2026-03-04 01:23:46,555 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:24:02.078
+!MESSAGE 2026-03-04 01:24:02,078 INFO  org.talend.librariesmanager.librarydata.LibraryDataService  - org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact com.teradata:tdgssconfig:pom:16.20.00.02 in talend (https://talend-update.talend.com/nexus/content/repositories/libraries/)
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:24:02.410
+!MESSAGE 2026-03-04 01:24:02,410 INFO  org.talend.librariesmanager.librarydata.LibraryDataService  - org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact com.teradata:terajdbc4:pom:16.20.00.02 in talend (https://talend-update.talend.com/nexus/content/repositories/libraries/)
+
+
+!ENTRY org.talend.platform.logging 2 0 2026-03-04 01:24:03.620
+!MESSAGE 2026-03-04 01:24:03,620 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 2 0 2026-03-04 01:24:03.645
+!MESSAGE 2026-03-04 01:24:03,645 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:24:16.820
+!MESSAGE 2026-03-04 01:24:16,819 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:24:17.230
+!MESSAGE 2026-03-04 01:24:17,228 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:24:17.232
+!MESSAGE 2026-03-04 01:24:17,232 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:24:17.238
+!MESSAGE 2026-03-04 01:24:17,238 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:24:17.240
+!MESSAGE 2026-03-04 01:24:17,238 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:25:11.808
+!MESSAGE 2026-03-04 01:25:11,808 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:25:12.096
+!MESSAGE 2026-03-04 01:25:12,096 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:25:12.995
+!MESSAGE 2026-03-04 01:25:12,995 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:25:12.997
+!MESSAGE 2026-03-04 01:25:12,997 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:25:13.007
+!MESSAGE 2026-03-04 01:25:13,005 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:25:13.009
+!MESSAGE 2026-03-04 01:25:13,007 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:25:13.504
+!MESSAGE 2026-03-04 01:25:13,504 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:25:14.108
+!MESSAGE 2026-03-04 01:25:14,106 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:25:14.995
+!MESSAGE 2026-03-04 01:25:14,995 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/jdim_route_0.1/target/classpath.jar; ecotrack.jdim_route_0_1.jdim_route --context=Default --stat_port=3577 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:27:15.055
+!MESSAGE 2026-03-04 01:27:15,055 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:27:15.255
+!MESSAGE 2026-03-04 01:27:15,253 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:27:15.908
+!MESSAGE 2026-03-04 01:27:15,908 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:27:15.910
+!MESSAGE 2026-03-04 01:27:15,908 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:27:15.916
+!MESSAGE 2026-03-04 01:27:15,916 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:27:15.918
+!MESSAGE 2026-03-04 01:27:15,918 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_ROUTE_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:27:16.289
+!MESSAGE 2026-03-04 01:27:16,289 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:27:16.738
+!MESSAGE 2026-03-04 01:27:16,736 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 01:27:16.967
+!MESSAGE 2026-03-04 01:27:16,967 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/jdim_route_0.1/target/classpath.jar; ecotrack.jdim_route_0_1.jdim_route --context=Default --stat_port=3789 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:08.466
+!MESSAGE 2026-03-04 10:52:08,464 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:08.997
+!MESSAGE 2026-03-04 10:52:08,997 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:08.999
+!MESSAGE 2026-03-04 10:52:08,999 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:09.005
+!MESSAGE 2026-03-04 10:52:09,003 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:09.007
+!MESSAGE 2026-03-04 10:52:09,005 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:28.622
+!MESSAGE 2026-03-04 10:52:28,622 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:28.890
+!MESSAGE 2026-03-04 10:52:28,888 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:29.704
+!MESSAGE 2026-03-04 10:52:29,704 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:29.706
+!MESSAGE 2026-03-04 10:52:29,706 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:29.762
+!MESSAGE 2026-03-04 10:52:29,762 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:29.764
+!MESSAGE 2026-03-04 10:52:29,762 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JFACT_MESUREMENT_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:30.332
+!MESSAGE 2026-03-04 10:52:30,332 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:31.555
+!MESSAGE 2026-03-04 10:52:31,555 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:52:32.215
+!MESSAGE 2026-03-04 10:52:32,213 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx4096M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -XX:ConcGCThreads=2 -XX:ParallelGCThreads=4 -XX:MaxGCPauseMillis=200 -XX:+UseG1GC -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/jfact_mesurement_0.1/target/classpath.jar; ecotrack.jfact_mesurement_0_1.jfact_mesurement --context=Default --stat_port=4052 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:11.358
+!MESSAGE 2026-03-04 10:57:11,358 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:11.875
+!MESSAGE 2026-03-04 10:57:11,873 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_TIME_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:11.875
+!MESSAGE 2026-03-04 10:57:11,875 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_TIME_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:11.879
+!MESSAGE 2026-03-04 10:57:11,879 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_TIME_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:11.881
+!MESSAGE 2026-03-04 10:57:11,879 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_TIME_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:38.192
+!MESSAGE 2026-03-04 10:57:38,192 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:38.363
+!MESSAGE 2026-03-04 10:57:38,363 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:38.946
+!MESSAGE 2026-03-04 10:57:38,944 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_TIME_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:38.948
+!MESSAGE 2026-03-04 10:57:38,948 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_TIME_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:38.953
+!MESSAGE 2026-03-04 10:57:38,953 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_JDIM_TIME_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:38.955
+!MESSAGE 2026-03-04 10:57:38,955 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_JDIM_TIME_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:39.223
+!MESSAGE 2026-03-04 10:57:39,223 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:39.699
+!MESSAGE 2026-03-04 10:57:39,699 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:57:40.128
+!MESSAGE 2026-03-04 10:57:40,128 INFO  org.talend.designer.core.runprocess.Processor  - CommandLine: C:/Program Files/Java/jre1.8.0_471/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/File rouge/ECOTRACK/etl/ECOTRACK/poms/jobs/process/ECOTRACK_DW/jdim_time_0.1/target/classpath.jar; ecotrack.jdim_time_0_1.jdim_time --context=Default --stat_port=3676 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:58:10.003
+!MESSAGE 2026-03-04 10:58:10,001 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_ROUTINES: org.example.ecotrack.code:routines:7.3.1 with classifier  to /ECOTRACK_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:58:10.005
+!MESSAGE 2026-03-04 10:58:10,003 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_JDIM_ROUTE_0.1: org.example.ecotrack.job:jdim_route:0.1.0 with classifier  to /ECOTRACK_JDIM_ROUTE_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:58:10.007
+!MESSAGE 2026-03-04 10:58:10,007 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_JFACT_MESUREMENT_0.1: org.example.ecotrack.job:jfact_mesurement:0.1.0 with classifier  to /ECOTRACK_JFACT_MESUREMENT_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:58:10.009
+!MESSAGE 2026-03-04 10:58:10,009 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/ECOTRACK_JDIM_TIME_0.1: org.example.ecotrack.job:jdim_time:0.1.0 with classifier  to /ECOTRACK_JDIM_TIME_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:58:10.450
+!MESSAGE 2026-03-04 10:58:10,450 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_ORCHESTRATION_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:58:10.452
+!MESSAGE 2026-03-04 10:58:10,452 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_ORCHESTRATION_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:58:10.458
+!MESSAGE 2026-03-04 10:58:10,456 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /ECOTRACK_ORCHESTRATION_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2026-03-04 10:58:10.458
+!MESSAGE 2026-03-04 10:58:10,458 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /ECOTRACK_ORCHESTRATION_0.1/src/test/resources
+

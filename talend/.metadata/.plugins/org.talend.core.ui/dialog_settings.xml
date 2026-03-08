@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ImportExportAction">
+		<item value="org.eclipse.wst.xml.ui.internal.wizards.ExportXMLCatalogWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.debug.ui"/>
+			<item value="org.eclipse.equinox.p2.category"/>
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.wst.XMLCategory"/>
+		</list>
+	</section>
+</section>

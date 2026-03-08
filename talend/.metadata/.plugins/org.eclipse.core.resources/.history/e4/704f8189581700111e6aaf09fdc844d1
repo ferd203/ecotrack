@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_DsRKA_IXEfCBWJUIj8rsGw" id="_y7NnoPIWEfCBWJUIj8rsGw" label="ecotrack_dw" purpose="Connexion au datawarehouse" description="Intégration des données ecotrack" version="0.1" statusCode="" item="_DsRKBfIXEfCBWJUIj8rsGw" displayName="ecotrack_dw">
+    <author href="../../talend.project#_Ja3UsPGMEfCSx8ThoIoVcw"/>
+    <additionalProperties xmi:id="_DsWCgPIXEfCBWJUIj8rsGw" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_DsWCgfIXEfCBWJUIj8rsGw" key="created_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_DsWCgvIXEfCBWJUIj8rsGw" key="created_date" value="2026-01-15T14:35:29.448+0100"/>
+    <additionalProperties xmi:id="_DsWCg_IXEfCBWJUIj8rsGw" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_DsWChPIXEfCBWJUIj8rsGw" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_DsWChfIXEfCBWJUIj8rsGw" key="modified_date" value="2026-03-04T00:27:25.534+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_DsRKBPIXEfCBWJUIj8rsGw" path="" locked="true" lockDate="2026-03-04T00:27:16.685+0100">
+    <locker href="../../talend.project#_Ja3UsPGMEfCSx8ThoIoVcw"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:DatabaseConnectionItem xmi:id="_DsRKBfIXEfCBWJUIj8rsGw" property="_DsRKA_IXEfCBWJUIj8rsGw" state="_DsRKBPIXEfCBWJUIj8rsGw" typeName="PostgreSQL">
+    <connection href="ecotrack_dw_0.1.item#_DsRKAPIXEfCBWJUIj8rsGw"/>
+  </TalendProperties:DatabaseConnectionItem>
+</xmi:XMI>

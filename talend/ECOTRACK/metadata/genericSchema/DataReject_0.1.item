@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_PQ3U4PLjEfCTlrqeeUj6oQ" name="repository.metadataGenericSchema" dataPackage="_PQ3U4fLjEfCTlrqeeUj6oQ"/>
+  <TalendMetadata:GenericPackage xmi:id="_PQ3U4fLjEfCTlrqeeUj6oQ" name="repository.metadataGenericSchema" dataManager="_PQ3U4PLjEfCTlrqeeUj6oQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_PQ3U4vLjEfCTlrqeeUj6oQ" id="_kM44UPLiEfCTlrqeeUj6oQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PQ3U4_LjEfCTlrqeeUj6oQ" name="idLigne" label="idLigne" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PQ3U5PLjEfCTlrqeeUj6oQ" name="chemin" label="chemin" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PQ3U5fLjEfCTlrqeeUj6oQ" name="fileName" label="fileName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PQ3U5vLjEfCTlrqeeUj6oQ" name="message" label="message" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PQ3U5_LjEfCTlrqeeUj6oQ" name="dateReject" label="dateReject" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

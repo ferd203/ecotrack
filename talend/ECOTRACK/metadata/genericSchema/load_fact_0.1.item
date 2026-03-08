@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="__uU8sPv5EfCZitQQI7kG9w" name="load_fact" label="load_fact" dataPackage="_GMbq8fJqEfCTlrqeeUj6oQ"/>
+  <TalendMetadata:GenericPackage xmi:id="_GMbq8fJqEfCTlrqeeUj6oQ" name="repository.metadataGenericSchema" dataManager="__uU8sPv5EfCZitQQI7kG9w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_GMbq8vJqEfCTlrqeeUj6oQ" id="_EH3noPJpEfCTlrqeeUj6oQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GMbq8_JqEfCTlrqeeUj6oQ" name="time_sk" label="time_sk" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GMbq9PJqEfCTlrqeeUj6oQ" name="container_sk" label="container_sk" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GMbq9fJqEfCTlrqeeUj6oQ" name="zone_sk" label="zone_sk" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GMbq_vJqEfCTlrqeeUj6oQ" name="waste_type_sk" label="waste_type_sk" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GMbq9vJqEfCTlrqeeUj6oQ" name="agent_sk" label="agent_sk" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GMbq9_JqEfCTlrqeeUj6oQ" name="device_sk" label="device_sk" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GMbq-PJqEfCTlrqeeUj6oQ" name="route_sk" label="route_sk" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GMbq-fJqEfCTlrqeeUj6oQ" name="taux_remplissage_pct" label="taux_remplissage_pct" length="-1" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GMbq-vJqEfCTlrqeeUj6oQ" name="volume_litres" label="volume_litres" length="-1" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GMbq-_JqEfCTlrqeeUj6oQ" name="temperature_c" label="temperature_c" length="-1" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GMbq_PJqEfCTlrqeeUj6oQ" name="battery_pct" label="battery_pct" length="-1" talendType="id_Short"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0EKXQPvbEfCZitQQI7kG9w" name="poids_estime_kg" label="poids_estime_kg" length="-1" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GMbq_fJqEfCTlrqeeUj6oQ" name="is_overflow" label="is_overflow" length="-1" talendType="id_Boolean"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GMbq__JqEfCTlrqeeUj6oQ" name="measurement_timestamp" label="measurement_timestamp" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

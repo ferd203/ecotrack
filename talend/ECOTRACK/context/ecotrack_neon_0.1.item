@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_paKbkAk1EfGGZaZ0Qg7w8w" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_paKbkQk1EfGGZaZ0Qg7w8w" comment="" name="cc1_Database" prompt="cc1_Database?" promptNeeded="false" type="id_String" value="neondb"/>
+  <contextParameter xmi:id="_paKbkgk1EfGGZaZ0Qg7w8w" comment="" name="cc1_Login" prompt="cc1_Login?" promptNeeded="false" type="id_String" value="neondb_owner"/>
+  <contextParameter xmi:id="_paKbkwk1EfGGZaZ0Qg7w8w" comment="" name="cc1_AdditionalParams" prompt="cc1_AdditionalParams?" promptNeeded="false" type="id_String" value="sslmode=require&amp;channel_binding=require"/>
+  <contextParameter xmi:id="_paKblAk1EfGGZaZ0Qg7w8w" comment="" name="cc1_Password" prompt="cc1_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:Q4s2D4A6uHL/7q89pRNPDQnYPWwvwbG9DtYIfXS+nQ23bHD936bMksxrbZA="/>
+  <contextParameter xmi:id="_paKblQk1EfGGZaZ0Qg7w8w" comment="" name="cc1_Server" prompt="cc1_Server?" promptNeeded="false" type="id_String" value="ep-wispy-frost-aberr6zr-pooler.eu-west-2.aws.neon.tech"/>
+  <contextParameter xmi:id="_paKblgk1EfGGZaZ0Qg7w8w" comment="" name="cc1_Schema" prompt="cc1_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_paKblwk1EfGGZaZ0Qg7w8w" comment="" name="cc1_Port" prompt="cc1_Port?" promptNeeded="false" type="id_String" value="5432"/>
+</talendfile:ContextType>

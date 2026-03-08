@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_Dt62kfJpEfCTlrqeeUj6oQ" name="repository.metadataGenericSchema" dataPackage="_Dt7doPJpEfCTlrqeeUj6oQ"/>
+  <TalendMetadata:GenericPackage xmi:id="_Dt7doPJpEfCTlrqeeUj6oQ" name="repository.metadataGenericSchema" dataManager="_Dt62kfJpEfCTlrqeeUj6oQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Dt7dofJpEfCTlrqeeUj6oQ" id="_zUr-UPJoEfCTlrqeeUj6oQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dt7dovJpEfCTlrqeeUj6oQ" name="device_sk" label="device_sk" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dt7do_JpEfCTlrqeeUj6oQ" name="device_bk" label="device_bk" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dt7dpPJpEfCTlrqeeUj6oQ" name="model" label="model" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dt7dpfJpEfCTlrqeeUj6oQ" name="installation_date" label="installation_date" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dt7dpvJpEfCTlrqeeUj6oQ" name="is_active" label="is_active" length="-1" talendType="id_Boolean"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

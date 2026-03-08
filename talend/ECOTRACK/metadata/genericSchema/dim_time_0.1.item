@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_STJh8PJmEfCTlrqeeUj6oQ" name="repository.metadataGenericSchema" dataPackage="_STJh8fJmEfCTlrqeeUj6oQ" mappingTypeUsed="true" mappingTypeId="postgres_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_STJh8fJmEfCTlrqeeUj6oQ" name="repository.metadataGenericSchema" dataManager="_STJh8PJmEfCTlrqeeUj6oQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_STKwEPJmEfCTlrqeeUj6oQ" id="_R1mAEPJiEfCTlrqeeUj6oQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_STKwEfJmEfCTlrqeeUj6oQ" name="time_sk" label="time_sk" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_STKwEvJmEfCTlrqeeUj6oQ" name="date_bk" label="date_bk" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_STKwE_JmEfCTlrqeeUj6oQ" name="day" label="day" length="-1" sourceType="INT2" talendType="id_Short"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_STKwFPJmEfCTlrqeeUj6oQ" name="month" label="month" length="-1" sourceType="INT2" talendType="id_Short"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_STKwFfJmEfCTlrqeeUj6oQ" name="month_name" label="month_name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_STKwFvJmEfCTlrqeeUj6oQ" name="quarter" label="quarter" length="-1" sourceType="INT2" talendType="id_Short"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_STKwF_JmEfCTlrqeeUj6oQ" name="year" label="year" length="-1" sourceType="INT2" talendType="id_Short"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_STKwGPJmEfCTlrqeeUj6oQ" name="day_of_week" label="day_of_week" length="-1" sourceType="INT2" talendType="id_Short"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_STKwGfJmEfCTlrqeeUj6oQ" name="is_weekend" label="is_weekend" length="-1" talendType="id_Boolean"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_cr-FAPJoEfCTlrqeeUj6oQ" name="repository.metadataGenericSchema" dataPackage="_cr-FAfJoEfCTlrqeeUj6oQ"/>
+  <TalendMetadata:GenericPackage xmi:id="_cr-FAfJoEfCTlrqeeUj6oQ" name="repository.metadataGenericSchema" dataManager="_cr-FAPJoEfCTlrqeeUj6oQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cr-FAvJoEfCTlrqeeUj6oQ" id="_E0ZL4PJoEfCTlrqeeUj6oQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cr-FA_JoEfCTlrqeeUj6oQ" name="route_sk" label="route_sk" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cr-FBPJoEfCTlrqeeUj6oQ" name="route_bk" label="route_bk" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cr-FBfJoEfCTlrqeeUj6oQ" name="route_date" label="route_date" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cr-FBvJoEfCTlrqeeUj6oQ" name="planned_distance_m" label="planned_distance_m" length="-1" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cr-FB_JoEfCTlrqeeUj6oQ" name="planned_duration_min" label="planned_duration_min" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cr-FCPJoEfCTlrqeeUj6oQ" name="actual_distance_m" label="actual_distance_m" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cr-FCfJoEfCTlrqeeUj6oQ" name="actual_duration_min" label="actual_duration_min" length="-1" talendType="id_Integer"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

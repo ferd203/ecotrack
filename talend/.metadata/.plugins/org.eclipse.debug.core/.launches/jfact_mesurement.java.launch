@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="ecotrack.jfact_mesurement_0_1.jfact_mesurement"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--context=Default --stat_port=3864 --trace_port=5076 "/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ECOTRACK_JFACT_MESUREMENT_0.1"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+<booleanAttribute key="org.eclipse.jdt.launching.STOP_IN_MAIN" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dencryption.keys.file=/D:/LOGICIELS/Logiciels/TOS_DI-20200219_1130-V7.3.1/TOS_DI-20200219_1130-V7.3.1/configuration/studio.keys"/>
+</launchConfiguration>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_261nwAk0EfGGZaZ0Qg7w8w" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_261nwQk0EfGGZaZ0Qg7w8w" comment="" name="PGHOST" prompt="PGHOST?" promptNeeded="false" type="id_String" value="ep-wispy-frost-aberr6zr-pooler.eu-west-2.aws.neon.tech"/>
+  <contextParameter xmi:id="_261nwgk0EfGGZaZ0Qg7w8w" comment="" name="PGDATABASE" prompt="PGDATABASE?" promptNeeded="false" type="id_String" value="neondb"/>
+  <contextParameter xmi:id="_261nwwk0EfGGZaZ0Qg7w8w" comment="" name="PGUSER" prompt="PGUSER?" promptNeeded="false" type="id_String" value="neondb_owner"/>
+  <contextParameter xmi:id="_261nxAk0EfGGZaZ0Qg7w8w" comment="" name="PGPASSWORD" prompt="PGPASSWORD?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:+5et4yPIgrFEH3nAxlKTQvN2E15Mt1GYn/5VK53u406Q7PNzINQLCm2pa60="/>
+  <contextParameter xmi:id="_261nxQk0EfGGZaZ0Qg7w8w" comment="" name="PGSSLMODE" prompt="PGSSLMODE?" promptNeeded="false" type="id_String" value="require"/>
+  <contextParameter xmi:id="_261nxgk0EfGGZaZ0Qg7w8w" comment="" name="PGCHANNELBINDING" prompt="PGCHANNELBINDING?" promptNeeded="false" type="id_String" value="require"/>
+</talendfile:ContextType>

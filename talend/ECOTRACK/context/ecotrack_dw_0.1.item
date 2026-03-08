@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_DYXWkPIXEfCBWJUIj8rsGw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_DYXWkfIXEfCBWJUIj8rsGw" comment="" name="ecotrack_dw_Port" prompt="ecotrack_dw_Port?" promptNeeded="false" type="id_String" value="5432"/>
+  <contextParameter xmi:id="_DYXWkvIXEfCBWJUIj8rsGw" comment="" name="ecotrack_dw_Password" prompt="ecotrack_dw_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:uXYSqK0HIEBlmFUO1RSZQ3meFCvD5aYOcWDyJ9Im/cJdeQ=="/>
+  <contextParameter xmi:id="_DYXWk_IXEfCBWJUIj8rsGw" comment="" name="ecotrack_dw_Server" prompt="ecotrack_dw_Server?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_DYXWlPIXEfCBWJUIj8rsGw" comment="" name="ecotrack_dw_AdditionalParams" prompt="ecotrack_dw_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_DYXWlfIXEfCBWJUIj8rsGw" comment="" name="ecotrack_dw_Schema" prompt="ecotrack_dw_Schema?" promptNeeded="false" type="id_String" value="dw"/>
+  <contextParameter xmi:id="_DYXWlvIXEfCBWJUIj8rsGw" comment="" name="ecotrack_dw_Database" prompt="ecotrack_dw_Database?" promptNeeded="false" type="id_String" value="ecotrack"/>
+  <contextParameter xmi:id="_DYXWl_IXEfCBWJUIj8rsGw" comment="" name="ecotrack_dw_Login" prompt="ecotrack_dw_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+</talendfile:ContextType>

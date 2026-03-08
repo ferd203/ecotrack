@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_cR6csPJcEfCTlrqeeUj6oQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_cR6csfJcEfCTlrqeeUj6oQ" comment="" name="PARAMS_LOG_Port" prompt="PARAMS_LOG_Port?" promptNeeded="false" type="id_String" value="5432"/>
+  <contextParameter xmi:id="_cR6csvJcEfCTlrqeeUj6oQ" comment="" name="PARAMS_LOG_Database" prompt="PARAMS_LOG_Database?" promptNeeded="false" type="id_String" value="ecotrack"/>
+  <contextParameter xmi:id="_cR6cs_JcEfCTlrqeeUj6oQ" comment="" name="PARAMS_LOG_AdditionalParams" prompt="PARAMS_LOG_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_cR6ctPJcEfCTlrqeeUj6oQ" comment="" name="PARAMS_LOG_Schema" prompt="PARAMS_LOG_Schema?" promptNeeded="false" type="id_String" value="PARAMS_LOG"/>
+  <contextParameter xmi:id="_cR6ctfJcEfCTlrqeeUj6oQ" comment="" name="PARAMS_LOG_Password" prompt="PARAMS_LOG_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:sZW6hP52BjSxxPXgEFIoYJm1cENQSv036TsuagZ+H2ib4A=="/>
+  <contextParameter xmi:id="_cR6ctvJcEfCTlrqeeUj6oQ" comment="" name="PARAMS_LOG_Login" prompt="PARAMS_LOG_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+  <contextParameter xmi:id="_cR6ct_JcEfCTlrqeeUj6oQ" comment="" name="PARAMS_LOG_Server" prompt="PARAMS_LOG_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+</talendfile:ContextType>
