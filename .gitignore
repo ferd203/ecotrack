@@ -20,3 +20,6 @@
 .JETEmitters
 .$dw SCHEMA.drawio.bkp
 **/__**
+venv/
+.venv/
+python/venv/
