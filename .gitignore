@@ -14,12 +14,6 @@
 .ideal/
 .vscode/
 
-**/temp
-
-.metadata
-.JETEmitters
-.$dw SCHEMA.drawio.bkp
-**/__**
 venv/
 .venv/
 python/venv/
