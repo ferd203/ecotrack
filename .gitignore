@@ -18,3 +18,24 @@ venv/
 .venv/
 python/venv/
 *.pbix
+
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Docker
+*.log

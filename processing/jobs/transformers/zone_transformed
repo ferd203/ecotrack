@@ -1,0 +1,159 @@
+import logging
+import os
+from datetime import datetime
+from io import BytesIO
+
+import boto3
+import pandas as pd
+from dotenv import load_dotenv
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+logger = logging.getLogger(__name__)
+
+
+def transform_dim_zone_minio(
+    source_prefix: str = "incoming/zone",
+    transformed_prefix: str = "transformed/",
+    archive_prefix: str = "archive/",
+):
+    try:
+        load_dotenv()
+
+        endpoint = os.getenv("MINIO_ENDPOINT")
+        access_key = os.getenv("MINIO_ACCESS_KEY")
+        secret_key = os.getenv("MINIO_SECRET_KEY")
+        bucket = os.getenv("MINIO_BUCKET")
+
+        if not all([endpoint, access_key, secret_key, bucket]):
+            raise ValueError("Variables MinIO manquantes dans le fichier .env")
+
+        client = boto3.client(
+            "s3",
+            endpoint_url=endpoint,
+            aws_access_key_id=access_key,
+            aws_secret_access_key=secret_key,
+        )
+
+        logger.info(f"Recherche des fichiers MinIO avec le préfixe : {source_prefix}")
+
+        response = client.list_objects_v2(Bucket=bucket, Prefix=source_prefix)
+        objects = response.get("Contents", [])
+
+        if not objects:
+            raise FileNotFoundError(
+                f"Aucun fichier trouvé avec le préfixe : {source_prefix}"
+            )
+
+        csv_keys = [
+            obj["Key"]
+            for obj in objects
+            if obj["Key"].endswith(".csv")
+        ]
+
+        if not csv_keys:
+            raise FileNotFoundError(
+                f"Aucun fichier CSV trouvé avec le préfixe : {source_prefix}"
+            )
+
+        logger.info(f"{len(csv_keys)} fichier(s) CSV trouvé(s)")
+
+        dfs = []
+
+        for key in csv_keys:
+            logger.info(f"Lecture du fichier MinIO : {key}")
+            response = client.get_object(Bucket=bucket, Key=key)
+            df_part = pd.read_csv(BytesIO(response["Body"].read()), encoding="utf-8")
+            logger.info(f"{len(df_part)} lignes lues depuis {key}")
+            dfs.append(df_part)
+
+        df = pd.concat(dfs, ignore_index=True)
+        logger.info(f"{len(df)} lignes totales après concaténation")
+
+        df.columns = df.columns.str.strip()
+
+        required_columns = [
+            "zone_bk",
+            "zone_name",
+            "city",
+            "population",
+            "area_km2",
+            "latitude",
+            "longitude",
+        ]
+        missing_columns = [col for col in required_columns if col not in df.columns]
+        if missing_columns:
+            logger.error(f"Colonnes manquantes : {missing_columns}")
+            return None
+
+        # SUPPRESSION CLÉ TECHNIQUE SOURCE
+        df.drop(columns=["zone_sk"], inplace=True, errors="ignore")
+
+        # NETTOYAGE TEXTE
+        df["zone_bk"] = df["zone_bk"].astype(str).str.strip()
+        df["zone_name"] = df["zone_name"].astype(str).str.strip()
+        df["city"] = df["city"].astype(str).str.strip()
+
+        # CONVERSIONS NUMÉRIQUES
+        df["population"] = pd.to_numeric(df["population"], errors="coerce")
+        df["area_km2"] = pd.to_numeric(df["area_km2"], errors="coerce")
+        df["latitude"] = pd.to_numeric(df["latitude"], errors="coerce")
+        df["longitude"] = pd.to_numeric(df["longitude"], errors="coerce")
+
+        # SUPPRESSION DOUBLONS
+        df.drop_duplicates(inplace=True)
+
+        # COLONNE ETL
+        df["etl_date"] = pd.Timestamp.now()
+
+        run_timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+        transformed_filename = f"zone_TRANSFORMED_{run_timestamp}.csv"
+        transformed_key = f"{transformed_prefix}{run_timestamp}/{transformed_filename}"
+
+        output_buffer = BytesIO()
+        df.to_csv(output_buffer, index=False, encoding="utf-8")
+        output_buffer.seek(0)
+
+        client.put_object(
+            Bucket=bucket,
+            Key=transformed_key,
+            Body=output_buffer.getvalue(),
+            ContentType="text/csv",
+        )
+        logger.info(f"Fichier transformé enregistré : {transformed_key}")
+
+        # Archive + suppression de chaque fichier source
+        for source_key in csv_keys:
+            source_filename = source_key.split("/")[-1]
+            archive_key = f"{archive_prefix}{run_timestamp}/{source_filename}"
+
+            client.copy_object(
+                Bucket=bucket,
+                CopySource={"Bucket": bucket, "Key": source_key},
+                Key=archive_key,
+            )
+            logger.info(f"Fichier source copié vers archive : {archive_key}")
+
+            client.delete_object(Bucket=bucket, Key=source_key)
+            logger.info(f"Fichier source supprimé de incoming : {source_key}")
+
+        logger.info("✅ Transformation DIM_ZONE terminée")
+        return df
+
+    except Exception as e:
+        logger.exception(f"Erreur transformation DIM_ZONE : {e}")
+        return None
+
+
+if __name__ == "__main__":
+    df_result = transform_dim_zone_minio()
+
+    if df_result is not None:
+        print("\nAPERÇU DIM_ZONE TRANSFORMED")
+        print(df_result.head())
+        print("\nSTRUCTURE")
+        print(df_result.dtypes)

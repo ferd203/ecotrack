@@ -1,0 +1,36 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: "Données brutes provenant du pipeline IoT et des tournées"
+
+    tables:
+
+      - name: mesures_raw
+        description: "Mesures IoT des conteneurs"
+
+      - name: tournee_raw
+        description: "Instance de tournée"
+
+      - name: tournee_conteneur_raw
+        description: "Visites conteneurs par tournée"
+
+      - name: tournee_agent_raw
+        description: "Agents affectés aux tournées"
+
+      - name: dim_container_raw
+        description: "Conteneurs source"
+
+      - name: dim_zone_raw
+        description: "Zones géographiques"
+
+      - name: dim_device_raw
+        description: "Capteurs IoT"
+
+      - name: dim_agent_raw
+        description: "Agents de collecte"
+
+      - name: dim_waste_type_raw
+        description: "Types de déchets"
+

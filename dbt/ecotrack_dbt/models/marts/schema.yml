@@ -1,0 +1,149 @@
+version: 2
+
+models:
+  - name: dim_time
+    description: "Dimension temps"
+    columns:
+      - name: time_sk
+        tests:
+          - unique
+          - not_null
+      - name: date_bk
+        tests:
+          - not_null
+
+  - name: dim_zone
+    description: "Dimension zone"
+    columns:
+      - name: zone_sk
+        tests:
+          - unique
+          - not_null
+      - name: zone_bk
+        tests:
+          - not_null
+
+  - name: dim_container
+    description: "Dimension conteneur"
+    columns:
+      - name: container_sk
+        tests:
+          - unique
+          - not_null
+      - name: container_bk
+        tests:
+          - not_null
+
+  - name: dim_route
+    description: "Dimension route"
+    columns:
+      - name: route_sk
+        tests:
+          - not_null
+      - name: route_bk
+        tests:
+          - not_null
+      - name: route_date
+        tests:
+          - not_null
+
+  - name: dim_agent
+    description: "Dimension agent"
+    columns:
+      - name: agent_sk
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_device
+    description: "Dimension device"
+    columns:
+      - name: device_sk
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_waste_type
+    description: "Dimension type de déchet"
+    columns:
+      - name: waste_type_sk
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_measurement
+    description: "Table de faits des mesures IoT"
+    columns:
+      - name: time_sk
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_time')
+              field: time_sk
+
+      - name: container_sk
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_container')
+              field: container_sk
+
+      - name: zone_sk
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_zone')
+              field: zone_sk
+
+      - name: waste_type_sk
+        tests:
+          - relationships:
+              to: ref('dim_waste_type')
+              field: waste_type_sk
+
+      - name: device_sk
+        tests:
+          - relationships:
+              to: ref('dim_device')
+              field: device_sk
+
+      - name: measurement_timestamp
+        tests:
+          - not_null
+
+      - name: taux_remplissage_pct
+        tests:
+          - not_null
+
+  - name: fact_collecte
+    description: "Table de faits des collectes"
+    columns:
+      - name: route_sk
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_route')
+              field: route_sk
+
+      - name: container_sk
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_container')
+              field: container_sk
+
+      - name: zone_sk
+        tests:
+          - relationships:
+              to: ref('dim_zone')
+              field: zone_sk
+
+      - name: agent_sk
+        tests:
+          - relationships:
+              to: ref('dim_agent')
+              field: agent_sk
+
+      - name: visit_datetime
+        tests:
+          - not_null

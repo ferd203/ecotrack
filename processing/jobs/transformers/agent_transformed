@@ -1,0 +1,131 @@
+import logging
+import os
+from datetime import datetime
+from io import BytesIO
+
+import boto3
+import pandas as pd
+from dotenv import load_dotenv
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+logger = logging.getLogger(__name__)
+
+
+def transform_dim_agent_minio(
+    source_key: str = "incoming/agent.csv",
+    transformed_prefix: str = "transformed/",
+    archive_prefix: str = "archive/",
+):
+    try:
+        load_dotenv()
+
+        endpoint = os.getenv("MINIO_ENDPOINT")
+        access_key = os.getenv("MINIO_ACCESS_KEY")
+        secret_key = os.getenv("MINIO_SECRET_KEY")
+        bucket = os.getenv("MINIO_BUCKET")
+
+        if not all([endpoint, access_key, secret_key, bucket]):
+            raise ValueError("Variables MinIO manquantes dans le fichier .env")
+
+        client = boto3.client(
+            "s3",
+            endpoint_url=endpoint,
+            aws_access_key_id=access_key,
+            aws_secret_access_key=secret_key,
+        )
+
+        logger.info(f"Lecture du fichier MinIO : {source_key}")
+
+        response = client.get_object(Bucket=bucket, Key=source_key)
+        df = pd.read_csv(BytesIO(response["Body"].read()))
+        logger.info(f"{len(df)} lignes lues")
+
+        df.columns = df.columns.str.strip()
+
+        required_columns = ["agent_bk", "full_name", "role", "is_active"]
+        missing_columns = [col for col in required_columns if col not in df.columns]
+        if missing_columns:
+            logger.error(f"Colonnes manquantes : {missing_columns}")
+            return None
+
+        if "agent_sk" in df.columns:
+            df.drop(columns=["agent_sk"], inplace=True)
+
+        split_names = df["full_name"].astype(str).str.strip().str.split(
+            " ",
+            n=1,
+            expand=True
+        )
+        df["firstname"] = split_names[0]
+        df["lastname"] = split_names[1].fillna("")
+
+        df.drop(columns=["full_name"], inplace=True)
+
+        df["is_active"] = df["is_active"].astype(bool)
+        df["etl_date"] = pd.Timestamp.now()
+
+        df = df[
+            [
+                "agent_bk",
+                "firstname",
+                "lastname",
+                "role",
+                "is_active",
+                "etl_date"
+            ]
+        ]
+
+        run_timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+        source_filename = source_key.split("/")[-1]
+        source_stem, source_ext = source_filename.rsplit(".", 1)
+
+        transformed_filename = (
+            f"{source_stem}_TRANSFORMED_{run_timestamp}.{source_ext}"
+        )
+        archived_filename = f"{source_stem}_{run_timestamp}.{source_ext}"
+
+        transformed_key = (
+            f"{transformed_prefix}{run_timestamp}/{transformed_filename}"
+        )
+        archive_key = f"{archive_prefix}{run_timestamp}/{archived_filename}"
+
+        output_buffer = BytesIO()
+        df.to_csv(output_buffer, index=False)
+        output_buffer.seek(0)
+
+        client.put_object(
+            Bucket=bucket,
+            Key=transformed_key,
+            Body=output_buffer.getvalue(),
+            ContentType="text/csv",
+        )
+        logger.info(f"Fichier transformé enregistré : {transformed_key}")
+
+        client.copy_object(
+            Bucket=bucket,
+            CopySource={"Bucket": bucket, "Key": source_key},
+            Key=archive_key,
+        )
+        logger.info(f"Fichier source copié vers archive : {archive_key}")
+
+        client.delete_object(Bucket=bucket, Key=source_key)
+        logger.info(f"Fichier source supprimé de incoming : {source_key}")
+
+        logger.info("✅ Transformation DIM_AGENT terminée")
+        return df
+
+    except Exception as e:
+        logger.exception(f"Erreur pendant la transformation : {e}")
+        return None
+
+
+if __name__ == "__main__":
+    df_result = transform_dim_agent_minio()
+
+    if df_result is not None:
+        print(df_result.head())
