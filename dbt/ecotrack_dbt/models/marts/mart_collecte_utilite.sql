@@ -13,6 +13,7 @@ with collecte as (
         fc.route_sk,
         fc.container_sk,
         fc.zone_sk,
+        fc.agent_sk,
         fc.visit_datetime,
         fc.taux_remplissage_pct,
         fc.volume_collecte_litres,
@@ -51,6 +52,8 @@ agg as (
         date_trunc('day', c.visit_datetime)::date as date_bk,
         c.route_sk,
         z.city,
+        c.agent_sk,
+        c.zone_sk,
 
         count(*) as nb_collectes,
 
@@ -70,7 +73,9 @@ agg as (
     group by
         date_trunc('day', c.visit_datetime)::date,
         c.route_sk,
-        z.city
+        z.city,
+        c.agent_sk,
+        c.zone_sk
 
 )
 

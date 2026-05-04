@@ -1,0 +1,72 @@
+{
+  "name": "EcoTrack Professional Theme",
+  "dataColors": [
+    "#16A34A",
+    "#FACC15",
+    "#F97316",
+    "#DC2626",
+    "#3B82F6",
+    "#8B5CF6",
+    "#14B8A6",
+    "#1F2937"
+  ],
+  "background": "#F8FAFC",
+  "foreground": "#1F2937",
+  "tableAccent": "#22C55E",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "fontFamily": "Segoe UI",
+            "fontSize": 13,
+            "color": {
+              "solid": {
+                "color": "#1F2937"
+              }
+            }
+          }
+        ],
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E5E7EB"
+              }
+            }
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#CBD5E1"
+              }
+            },
+            "position": "Outer",
+            "preset": "Custom",
+            "shadowSpread": 1,
+            "shadowBlur": 6,
+            "angle": 45,
+            "distance": 2,
+            "transparency": 65
+          }
+        ]
+      }
+    }
+  }
+}

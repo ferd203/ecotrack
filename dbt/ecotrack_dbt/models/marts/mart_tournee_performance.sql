@@ -13,6 +13,7 @@ with collecte as (
         fc.route_sk,
         fc.container_sk,
         fc.zone_sk,
+        fc.agent_sk,
         fc.visit_datetime,
         fc.volume_collecte_litres,
         fc.poids_collecte_kg,
@@ -52,6 +53,8 @@ agg as (
         r.route_bk,
         r.route_date as date_bk,
         z.city,
+        c.agent_sk,
+        c.zone_sk,
 
         count(distinct c.container_sk) as nb_conteneurs_visites,
 
@@ -76,6 +79,8 @@ agg as (
         r.route_bk,
         r.route_date,
         z.city,
+        c.agent_sk,
+        c.zone_sk,
         r.planned_distance_m,
         r.actual_distance_m,
         r.planned_duration_min,
