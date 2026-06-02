@@ -1,0 +1,114 @@
+CREATE TABLE DIM_TIME(
+   time_sk INTEGER,
+   date_bk DATE,
+   day_number SMALLINT,
+   month_number SMALLINT,
+   month_name VARCHAR(50) ,
+   quarter SMALLINT,
+   year_time VARCHAR(50) ,
+   day_of_week SMALLINT,
+   is_weekend BOOLEAN,
+   PRIMARY KEY(time_sk)
+);
+
+CREATE TABLE DIM_ROUTE(
+   route_sk BIGINT,
+   route_bk VARCHAR(50) ,
+   route_date DATE,
+   planned_distance_m NUMERIC(10,2)  ,
+   planned_duration_min NUMERIC(10,2)  ,
+   actual_distance_m NUMERIC(10,2)  ,
+   actual_duration_min NUMERIC(10,2)  ,
+   path GEOMETRY,
+   PRIMARY KEY(route_sk)
+);
+
+CREATE TABLE DIM_WASTE_TYPE(
+   waste_type_sk INTEGER,
+   waste_type_bk VARCHAR(50) ,
+   waste_type_name VARCHAR(50) ,
+   PRIMARY KEY(waste_type_sk)
+);
+
+CREATE TABLE DIM_DEVICE(
+   device_sk INTEGER,
+   device_bk VARCHAR(50) ,
+   model VARCHAR(50) ,
+   installation_date TIMESTAMP,
+   is_active VARCHAR(50) ,
+   PRIMARY KEY(device_sk)
+);
+
+CREATE TABLE DIM_ZONE(
+   zone_sk INTEGER,
+   zone_bk VARCHAR(50) ,
+   zone_name VARCHAR(50) ,
+   city VARCHAR(50) ,
+   population INTEGER,
+   area_km2 INTEGER,
+   latitude NUMERIC(5,2)  ,
+   longitude NUMERIC(5,2)  ,
+   geom GEOMETRY,
+   PRIMARY KEY(zone_sk)
+);
+
+CREATE TABLE DIM_CONTAINER(
+   container_sk INTEGER,
+   container_bk VARCHAR(50) ,
+   container_type VARCHAR(50) ,
+   capacity_l NUMERIC(12,2)  ,
+   zone_bk VARCHAR(50) ,
+   status VARCHAR(50) ,
+   latitude NUMERIC(8,4)  ,
+   longitude NUMERIC(8,4)  ,
+   geom GEOMETRY,
+   date_debut DATE,
+   date_fin DATE,
+   version VARCHAR(50) ,
+   is_current BOOLEAN,
+   created_at TIMESTAMP,
+   PRIMARY KEY(container_sk)
+);
+
+CREATE TABLE FACT_COLLECTE(
+   collecte_sk BIGINT,
+   time_sk INTEGER NOT NULL,
+   route_sk INTEGER NOT NULL,
+   container_sk INTEGER NOT NULL,
+   zone_sk INTEGER NOT NULL,
+   agent_sk INTEGER NOT NULL,
+   visit_datetime TIMESTAMP,
+   visit_order SMALLINT,
+   taux_remplissage_pct NUMERIC(15,2)  ,
+   vollume_collecte_litres NUMERIC(15,2)  ,
+   poids_collecte_kg NUMERIC(15,2)  ,
+   is_overflow BOOLEAN,
+   PRIMARY KEY(collecte_sk)
+);
+
+CREATE TABLE DIM_AGENT(
+   agent_sk INTEGER,
+   agent_bk VARCHAR(50)  NOT NULL,
+   firstname VARCHAR(50) ,
+   lastname VARCHAR(50) ,
+   role VARCHAR(50) ,
+   is_active VARCHAR(50) ,
+   PRIMARY KEY(agent_sk)
+);
+
+CREATE TABLE FACT_MEASUREMENT(
+   measurement_sk BIGINT,
+   time_sk INTEGER NOT NULL,
+   container_sk INTEGER NOT NULL,
+   device_sk INTEGER,
+   zone_sk INTEGER NOT NULL,
+   waste_type_sk INTEGER NOT NULL,
+   measurement_timestamp TIMESTAMP,
+   taux_remplissage_pct NUMERIC(15,2)  ,
+   volume_litres NUMERIC(15,2)  ,
+   poids_estime_kg NUMERIC(15,2)  ,
+   temperature_c VARCHAR(50) ,
+   batterie_pct VARCHAR(50) ,
+   is_overflow BOOLEAN,
+   PRIMARY KEY(measurement_sk)
+);
